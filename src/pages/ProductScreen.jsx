@@ -1,11 +1,28 @@
-import React from 'react'
-import SideBar from '../Components/SideBar'
+import React from 'react';
+import Tablecomponent from '../Components/Table';
 
 const ProductScreen = () => {
-  return (
-    <h1>Product</h1>
-  )
-  
-}
+  const columns = [
+    {
+      title: 'Nombre producto',
+      dataIndex: 'name',
+      key: 'name',
+    },
+    {
+      title: 'Edad',
+      dataIndex: 'edad',
+      key: 'edad',
+    },
+    {
+      title: 'Pais',
+      dataIndex: 'pais',
+      key: 'pais',
+    },
+  ];
 
-export default ProductScreen
+  return (
+    <Tablecomponent columns={columns} />
+  );
+};
+
+export default ProductScreen;
