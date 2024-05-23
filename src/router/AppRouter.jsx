@@ -8,7 +8,6 @@ import { LayoutComponent } from '../Components/Layout'
 const AppRouter = () => {
   return (
     <BrowserRouter>
-     
      <LayoutComponent>
      <Routes>
         <Route path="/"  element={<ProductScreen/>}/>

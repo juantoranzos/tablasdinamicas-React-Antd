@@ -5,28 +5,28 @@ const Ventas = () => {
   const columns = [
     {
       title: 'Nombre comprador',
-      dataIndex: 'name',
+      dataIndex: 'nombreComprador',
       key: 'name',
     },
     {
       title: 'Nombre vendedor',
-      dataIndex: 'edad',
+      dataIndex: 'vendedor',
       key: 'edad',
     },
     {
       title: 'Producto vendido',
-      dataIndex: 'pais',
+      dataIndex: 'ProductoNombre',
       key: 'pais',
     }, {
       title: 'Fecha de venta',
-      dataIndex: 'fecha',
+      dataIndex: 'fechaVenta',
       key: 'fecha',
     },
   ];
   return (
     <>
       <h1>Ventas</h1>
-      <Tablecomponent columns={columns} />
+      <Tablecomponent columns={columns} url='/ventas' />
     </>
   )
 }

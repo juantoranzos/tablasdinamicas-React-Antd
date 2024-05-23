@@ -1,6 +1,5 @@
 import React from 'react';
 import Tablecomponent from '../Components/Table';
-
 const ProductScreen = () => {
   const columns = [
     {
@@ -9,23 +8,21 @@ const ProductScreen = () => {
       key: 'name',
     },
     {
-      title: 'Edad',
-      dataIndex: 'edad',
+      title: 'Precio',
+      dataIndex: 'precio',
       key: 'edad',
     },
     {
-      title: 'Pais',
-      dataIndex: 'pais',
+      title: 'Descripcion',
+      dataIndex: 'descripcion',
       key: 'pais',
     },
   ];
-
   return (
     <>
     <h1>Productos</h1>
-    <Tablecomponent columns={columns} />
+    <Tablecomponent columns={columns} url={'/productos'} />
     </>
   );
 };
-
 export default ProductScreen;
